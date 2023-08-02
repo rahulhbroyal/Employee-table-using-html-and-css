@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Employee details</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            table{
+                position: absolute;
+                top: -8%;
+                left: 50%;
+                transform: translate(-50%,50%);
+                width: 850px;
+                height: 500px;
+                background:white;
+                border: 1px solid black;
+
+            }
+            tr{
+                cursor: pointer;
+                transition: all .2s ease-in;
+            }
+            tr,td{
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid black;
+                background-color: rgba(0,0,0,0.1);
+            }
+            #details{
+                background:blueviolet;
+                color: white;
+            }
+            h1{
+                font-weight: 800;
+                text-align: center;
+                margin-top: 100px;
+                background: rgb(183,201,92);
+                background: linear-gradient(90deg, rgba(183,201,92,1) 0%, rgba(255,155,40,1) 36%, rgba(0,212,255,1) 100%);
+                height: 80px;
+                color: #db00d3;
+                animation: animate 2s linear infinite;
+                transform-origin: all;
+                padding: 13px;
+            }
+            @keyframes animate{
+                0%{
+                    filter: hue-rotate(0deg);
+                }
+                100%{
+                    filter: hue-rotate(360deg);
+                }
+            }
+            tr:hover{
+                background: #3ef956;
+                transition: scale(1.05s);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Employee Details</h1>
+        <table>
+            <tr id="details">
+                <th>Employee Name </th>
+                <th>Phone Number</th>
+                <th>Age</th>
+                <th>Date Of Birth</th>
+                <th>Address</th>
+                <th>Salary </th>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+                <td>9741021022</td>
+                <td>21</td>
+                <td>30/06/2001</td>
+                <td>Banglore</td>
+                <td>450000</td>
+            </tr>
+            <tr>
+                <td>Santhosh</td>
+                <td>9741541021</td>
+                <td>28</td>
+                <td>25/04/1997</td>
+                <td>Banglore</td>
+                <td>350000</td>
+            </tr>
+            <tr>
+                <td>Rajesh</td>
+                <td>945412122</td>
+                <td>22</td>
+                <td>10/06/2000</td>
+                <td>Pune</td>
+                <td>280000</td>
+            </tr>
+            <tr>
+                <td>Rohit</td>
+                <td>8741021022</td>
+                <td>24</td>
+                <td>12/02/1998</td>
+                <td>Banglore</td>
+                <td>460000</td>
+            </tr>
+            <tr>
+                <td>Arjun</td>
+                <td>7411021022</td>
+                <td>21</td>
+                <td>24/04/2001</td>
+                <td>Chennai</td>
+                <td>350000</td>
+            </tr>
+            <tr>
+                <td>Raj Kumar</td>
+                <td>8741021014</td>
+                <td>22</td>
+                <td>20/01/2000</td>
+                <td>Banglore</td>
+                <td>320000</td>
+            </tr>
+        </table>
+    </body>
+</html>
